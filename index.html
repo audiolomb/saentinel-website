@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Saentinel turns market analysis into explainable investment decisions governed by your risk policy.">
+    <meta name="theme-color" content="#f7f4ec">
+    <title>Saentinel | Intelligent, Risk-Governed Investing</title>
+    <link rel="icon" href="assets/saentinel-icon.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main>
+      <header class="site-header">
+        <a class="brand" href="#top" aria-label="Saentinel home">
+          <img src="assets/saentinel-logo.png" alt="Saentinel">
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="#capabilities">Capabilities</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#roadmap">Roadmap</a>
+        </nav>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <div class="eyebrow-line"></div>
+          <p class="status-pill">In active development</p>
+          <h1>Invest with intelligence.<br>Govern with discipline.</h1>
+          <p class="hero-intro">
+            An AI-assisted portfolio and risk platform that turns market
+            analysis into explainable decisions—governed by your rules.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#capabilities">Explore Saentinel</a>
+            <a class="button button-secondary" href="#how-it-works">How It Works</a>
+          </div>
+          <div class="trust-row" aria-label="Saentinel principles">
+            <span>Paper-first</span><i></i>
+            <span>Explainable</span><i></i>
+            <span>Risk-governed</span>
+          </div>
+        </div>
+
+        <div class="signal-graphic" aria-label="Market analysis passing through risk guardrails to produce an approved signal">
+          <div class="signal-labels" aria-hidden="true">
+            <span>Market analysis</span>
+            <span>Risk guardrails</span>
+            <span>Approved signal</span>
+          </div>
+          <svg viewBox="0 0 760 470" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="tealFade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#0c8b88" stop-opacity="0"></stop>
+                <stop offset=".4" stop-color="#0c8b88" stop-opacity=".8"></stop>
+                <stop offset="1" stop-color="#0c8b88"></stop>
+              </linearGradient>
+              <linearGradient id="goldFade" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#d6a32a"></stop>
+                <stop offset="1" stop-color="#d6a32a" stop-opacity=".65"></stop>
+              </linearGradient>
+              <radialGradient id="approvalGlow">
+                <stop offset="0" stop-color="#f5d77e" stop-opacity=".8"></stop>
+                <stop offset="1" stop-color="#f5d77e" stop-opacity="0"></stop>
+              </radialGradient>
+              <filter id="softGlow"><feGaussianBlur stdDeviation="10"></feGaussianBlur></filter>
+            </defs>
+            <circle cx="190" cy="234" r="145" fill="#dcefeb" opacity=".56"></circle>
+            <circle cx="654" cy="235" r="126" fill="#faefcd" opacity=".62"></circle>
+            <path class="grid-line" d="M105 418h565M150 390h480M200 362h390M250 334h300M285 305h230"></path>
+            <path class="grid-line" d="m105 418 180-113M210 418l105-113M320 418l25-113M430 418l-55-113M540 418 405 305M670 418 435 305"></path>
+            <g class="analysis-lines" fill="none" stroke="url(#tealFade)" stroke-width="2">
+              <path d="M40 122c130 0 107 72 235 72h40"></path>
+              <path d="M25 167c115 0 104 48 250 48h40"></path>
+              <path d="M50 212c96 0 98 20 225 20h40"></path>
+              <path d="M15 259c116 0 121-8 260-8h40"></path>
+              <path d="M45 306c105 0 107-37 230-37h40"></path>
+              <path d="M70 351c95 0 85-64 205-64h40"></path>
+            </g>
+            <g class="nodes" fill="#f7f4ec" stroke="#0c8b88" stroke-width="2">
+              <circle cx="93" cy="137" r="4"></circle><circle cx="146" cy="174" r="4"></circle>
+              <circle cx="106" cy="216" r="4"></circle><circle cx="178" cy="232" r="4"></circle>
+              <circle cx="91" cy="276" r="4"></circle><circle cx="155" cy="303" r="4"></circle>
+              <circle cx="212" cy="194" r="4"></circle><circle cx="230" cy="269" r="4"></circle>
+            </g>
+            <g class="guardrails" fill="#f7f4ec" fill-opacity=".9" stroke="#082642" stroke-width="2">
+              <path d="m314 102 48 27v207l-48-27z"></path>
+              <path d="m382 102 48 27v207l-48-27z"></path>
+              <path d="m450 102 48 27v207l-48-27z"></path>
+            </g>
+            <g class="guardrail-icons" fill="#082642">
+              <circle cx="338" cy="220" r="27"></circle>
+              <circle cx="406" cy="220" r="27"></circle>
+              <circle cx="474" cy="220" r="27"></circle>
+            </g>
+            <g class="mini-icons" fill="none" stroke="#f7f4ec" stroke-width="2">
+              <path d="m338 205 12 5v9c0 8-5 13-12 16-7-3-12-8-12-16v-9l12-5Z"></path>
+              <path d="M406 205v30M396 211h20M399 211l-7 13h14l-7-13ZM413 211l-7 13h14l-7-13Z"></path>
+              <path d="M464 207h20v27h-20zM468 214h12M468 220h12M468 226h8"></path>
+            </g>
+            <g class="approved-lines" fill="none" stroke="url(#goldFade)" stroke-width="2">
+              <path d="M498 173h77c24 0 23-34 48-34h57"></path>
+              <path d="M498 198h100c26 0 23-18 48-18h54"></path>
+              <path d="M498 223h151"></path>
+              <path d="M498 248h100c26 0 23 18 48 18h54"></path>
+              <path d="M498 273h77c24 0 23 34 48 34h57"></path>
+            </g>
+            <circle cx="574" cy="173" r="4" fill="#f7f4ec" stroke="#d6a32a" stroke-width="2"></circle>
+            <circle cx="604" cy="223" r="4" fill="#f7f4ec" stroke="#d6a32a" stroke-width="2"></circle>
+            <circle cx="574" cy="273" r="4" fill="#f7f4ec" stroke="#d6a32a" stroke-width="2"></circle>
+            <circle cx="683" cy="223" r="70" fill="url(#approvalGlow)" filter="url(#softGlow)"></circle>
+            <circle class="approval-circle" cx="683" cy="223" r="37" fill="#d6a32a"></circle>
+            <path d="m666 223 11 11 24-26" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </div>
+      </section>
+
+      <section class="section section-capabilities" id="capabilities">
+        <div class="section-heading">
+          <p class="kicker">Built for disciplined decisions</p>
+          <h2>Intelligence with guardrails.</h2>
+          <p>Saentinel combines investment analysis with an independent risk layer, so a promising signal never becomes an unchecked decision.</p>
+        </div>
+        <div class="capability-grid">
+          <article class="capability-card">
+            <span class="card-number">01</span>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2.4 20 5.8v5.8c0 5.1-3.2 8.7-8 10-4.8-1.3-8-4.9-8-10V5.8L12 2.4Z"></path><path d="m8.2 12 2.4 2.4 5.2-5.2"></path></svg>
+            </div>
+            <h3>Risk governed</h3>
+            <p>Every proposed order passes through explicit portfolio and position-level controls before it can proceed.</p>
+          </article>
+          <article class="capability-card">
+            <span class="card-number">02</span>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M5 3h14v18H5zM8 8h8M8 12h8M8 16h5"></path></svg>
+            </div>
+            <h3>Explainable decisions</h3>
+            <p>Understand the evidence, trade-offs and constraints behind every recommendation in plain language.</p>
+          </article>
+          <article class="capability-card">
+            <span class="card-number">03</span>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3v18M6 6h12M8 6 4 13h8L8 6Zm8 0-4 7h8l-4-7ZM4 13c.5 2 2 3 4 3s3.5-1 4-3M12 13c.5 2 2 3 4 3s3.5-1 4-3M8 21h8"></path></svg>
+            </div>
+            <h3>Portfolio aware</h3>
+            <p>Evaluate opportunities in the context of cash, concentration, exposure and the investments you already hold.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="how-it-works">
+        <div class="section-heading compact">
+          <p class="kicker">How it works</p>
+          <h2>From signal to governed action.</h2>
+        </div>
+        <ol class="process-list">
+          <li><span>01</span><div><h3>Analyze</h3><p>Strategies evaluate market and historical data to identify potential opportunities.</p></div></li>
+          <li><span>02</span><div><h3>Explain</h3><p>Saentinel presents the reasoning, supporting evidence and important trade-offs.</p></div></li>
+          <li><span>03</span><div><h3>Govern</h3><p>Your risk policy checks cash, exposure, concentration and order constraints.</p></div></li>
+          <li><span>04</span><div><h3>Approve</h3><p>You retain control while Saentinel records the complete decision and outcome.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="section roadmap-section" id="roadmap">
+        <div class="roadmap-copy">
+          <p class="kicker">Roadmap</p>
+          <h2>Paper-first today.<br>Broker-ready tomorrow.</h2>
+          <p>Saentinel is being developed carefully: proving its models and risk controls in paper trading before introducing controlled brokerage connectivity.</p>
+        </div>
+        <div class="roadmap-steps">
+          <article class="current"><span>Now</span><h3>Paper trading and validation</h3><p>Market data, portfolio accounting, strategies, risk enforcement and complete audit history.</p></article>
+          <article><span>Next</span><h3>Portfolio intelligence</h3><p>Performance dashboards, deeper strategy comparison and decision-quality reporting.</p></article>
+          <article><span>Future</span><h3>Controlled brokerage connectivity</h3><p>Read-only monitoring first, followed by explicitly approved order submission.</p></article>
+        </div>
+      </section>
+
+      <footer>
+        <a class="footer-brand" href="#top"><img src="assets/saentinel-logo.png" alt="Saentinel"></a>
+        <p>Intelligent analysis. Disciplined decisions.</p>
+        <p class="copyright">© 2026 Saentinel</p>
+      </footer>
+    </main>
+  </body>
+</html>
