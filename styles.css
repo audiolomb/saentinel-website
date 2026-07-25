@@ -58,6 +58,11 @@ a:focus-visible {
   display: block;
 }
 
+.brand img,
+.footer-brand img {
+  mix-blend-mode: multiply;
+}
+
 .brand img {
   display: block;
   width: 250px;
