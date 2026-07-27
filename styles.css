@@ -72,7 +72,7 @@ a:focus-visible {
 nav {
   display: flex;
   align-items: center;
-  gap: 46px;
+  gap: 34px;
   font-size: 16px;
   font-weight: 550;
 }
@@ -676,6 +676,233 @@ footer .copyright {
 
   .footer-brand {
     margin: 0 auto;
+  }
+}
+
+/* Version 1.0 release refresh */
+
+.section-release {
+  background: var(--canvas-deep);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.release-intro {
+  display: grid;
+  grid-template-columns: .72fr 1.25fr 1fr;
+  align-items: start;
+  gap: 48px;
+  margin-bottom: 68px;
+}
+
+.release-intro h2 {
+  max-width: 580px;
+}
+
+.release-intro > p:last-child {
+  margin: 0;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.release-proof {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.release-proof article {
+  min-height: 270px;
+  padding: 38px 42px;
+  border-right: 1px solid var(--line);
+}
+
+.release-proof article:last-child {
+  border-right: 0;
+}
+
+.release-proof span {
+  display: block;
+  margin-bottom: 48px;
+  color: var(--teal-dark);
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.release-proof strong {
+  display: block;
+  max-width: 280px;
+  font-size: 25px;
+  line-height: 1.15;
+  letter-spacing: -.025em;
+}
+
+.release-proof p {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.capability-card {
+  border-bottom: 1px solid var(--line);
+}
+
+.capability-card:nth-child(3n) {
+  border-right: 0;
+}
+
+.capability-card:nth-last-child(-n + 3) {
+  border-bottom: 0;
+}
+
+.principles-section {
+  background: var(--canvas-deep);
+}
+
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.principle-grid article {
+  min-height: 290px;
+  padding: 36px 32px;
+  border-right: 1px solid var(--line);
+}
+
+.principle-grid article:last-child {
+  border-right: 0;
+}
+
+.principle-grid span {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 740;
+}
+
+.principle-grid h3 {
+  margin: 62px 0 0;
+  font-size: 24px;
+  letter-spacing: -.02em;
+}
+
+.principle-grid p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.limits-section {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: start;
+  gap: 96px;
+  background: var(--navy);
+  color: var(--white);
+}
+
+.limits-section .kicker {
+  color: #58c5bf;
+}
+
+.limits-section h2 {
+  margin-top: 22px;
+}
+
+.limits-section > p {
+  max-width: 680px;
+  margin: 26px 0 0;
+  color: #c5d2dc;
+  font-size: 19px;
+  line-height: 1.75;
+}
+
+@media (max-width: 1100px) {
+  .release-intro {
+    grid-template-columns: 1fr 1.4fr;
+  }
+
+  .release-intro > p:last-child {
+    grid-column: 2;
+  }
+
+  .principle-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .principle-grid article:nth-child(2) {
+    border-right: 0;
+  }
+
+  .principle-grid article:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+}
+
+@media (max-width: 760px) {
+  .release-intro,
+  .release-proof,
+  .principle-grid,
+  .limits-section {
+    grid-template-columns: 1fr;
+  }
+
+  .release-intro {
+    gap: 24px;
+    margin-bottom: 48px;
+  }
+
+  .release-intro > p:last-child {
+    grid-column: auto;
+  }
+
+  .release-proof article,
+  .principle-grid article {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .release-proof article:last-child,
+  .principle-grid article:last-child {
+    border-bottom: 0;
+  }
+
+  .release-proof span {
+    margin-bottom: 28px;
+  }
+
+  .capability-card:nth-last-child(-n + 3) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .capability-card:last-child {
+    border-bottom: 0;
+  }
+
+  .principle-grid article:nth-child(2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .principle-grid h3 {
+    margin-top: 34px;
+  }
+
+  .limits-section {
+    gap: 24px;
+  }
+
+  .limits-section > p {
+    margin-top: 0;
+    font-size: 17px;
   }
 }
 
