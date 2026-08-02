@@ -1269,3 +1269,81 @@ footer .copyright {
     padding: 24px 0;
   }
 }
+
+/* Proportional intelligence governance */
+
+.proportional-principle {
+  margin-top: 34px;
+  padding: 34px 38px;
+  display: grid;
+  grid-template-columns: 54px minmax(230px, .72fr) minmax(0, 1.28fr);
+  gap: 28px;
+  align-items: center;
+  border: 1px solid rgba(214, 163, 42, .42);
+  background: rgba(255, 255, 255, .55);
+}
+
+.proportional-principle > span {
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 760;
+}
+
+.proportional-principle .principle-label {
+  margin: 0 0 10px;
+  color: var(--teal-dark);
+  font-size: 11px;
+  font-weight: 740;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.proportional-principle h3 {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: -.025em;
+}
+
+.proportional-principle > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.roadmap-steps article.in-development > span {
+  color: #9b720d;
+}
+
+.roadmap-steps article.in-development::before {
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 49px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--teal);
+}
+
+@media (max-width: 900px) {
+  .proportional-principle {
+    grid-template-columns: 42px 1fr;
+  }
+
+  .proportional-principle > p {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .proportional-principle {
+    padding: 28px 24px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .proportional-principle > p {
+    grid-column: auto;
+  }
+}
