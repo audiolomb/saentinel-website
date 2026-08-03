@@ -466,19 +466,29 @@ h2 {
 
 .roadmap-steps article {
   position: relative;
-  padding: 42px 0 42px 115px;
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  column-gap: 32px;
+  padding: 42px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .roadmap-steps article > span {
-  position: absolute;
-  top: 46px;
-  left: 0;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  align-self: start;
+  padding-top: 4px;
   color: var(--muted);
   font-size: 13px;
   font-weight: 700;
   letter-spacing: .08em;
+  line-height: 1.35;
   text-transform: uppercase;
+}
+
+.roadmap-steps article > h3,
+.roadmap-steps article > p {
+  grid-column: 2;
 }
 
 .roadmap-steps article.current > span {
@@ -660,7 +670,24 @@ footer .copyright {
   }
 
   .roadmap-steps article {
-    padding-left: 76px;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 34px 0;
+  }
+
+  .roadmap-steps article > span,
+  .roadmap-steps article > h3,
+  .roadmap-steps article > p {
+    grid-column: 1;
+  }
+
+  .roadmap-steps article > span {
+    grid-row: auto;
+    padding-top: 0;
+  }
+
+  .roadmap-steps article > p {
+    margin-top: 4px;
   }
 
   footer {
