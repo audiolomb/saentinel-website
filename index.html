@@ -3,313 +3,192 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Saentinel is a governed, evidence-driven investment research platform built around human authority, deterministic safeguards and auditable decisions.">
+    <meta name="description" content="Saentinel Trader is a bounded, paper-first intraday trading research system combining deterministic market analysis, one constrained AI decision, and rule-based risk and execution controls.">
     <meta name="theme-color" content="#f7f4ec">
-    <title>Saentinel | Governed Investment Intelligence</title>
+    <title>Saentinel Trader | Bounded AI. Deterministic Risk.</title>
     <link rel="icon" href="assets/saentinel-icon-v2.svg">
-    <link rel="stylesheet" href="styles.css?v=1.0.4">
+    <link rel="stylesheet" href="styles.css?v=2.0.0">
   </head>
   <body>
-    <main>
-      <header class="site-header">
-        <a class="brand" href="#top" aria-label="Saentinel home">
-          <img src="assets/saentinel-logo-v2.svg" alt="Saentinel">
-        </a>
-        <nav aria-label="Primary navigation">
-          <a href="#version-one">Version 1.0</a>
-          <a href="#outcomes">What It Does</a>
-          <a href="#how-it-works">How It Works</a>
-          <a href="#roadmap">Roadmap</a>
-        </nav>
-      </header>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Saentinel Trader home">
+        <img src="assets/saentinel-logo-v2.svg" alt="Saentinel">
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#system">The System</a>
+        <a href="#loop">How It Works</a>
+        <a href="#learning">What We're Learning</a>
+        <a href="#boundaries">Boundaries</a>
+      </nav>
+    </header>
 
+    <main>
       <section class="hero" id="top">
         <div class="hero-copy">
-          <div class="eyebrow-line"></div>
-          <p class="status-pill">Version 1.0 released</p>
-          <h1>Invest with intelligence.<br>Govern with discipline.</h1>
-          <p class="hero-intro">
-            Governed research, transparent reasoning, deterministic safeguards
-            and auditable paper execution—designed to strengthen human judgment,
-            never replace it.
-          </p>
+          <p class="eyebrow">Saentinel Trader · Active paper evaluation</p>
+          <h1>Bounded AI.<br><em>Deterministic risk.</em></h1>
+          <p class="hero-intro">A focused intraday trading research system for US stocks and ETFs. Market data finds the candidates. One constrained AI decision evaluates them. Deterministic controls decide what may actually happen.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#version-one">Explore Version 1.0</a>
-            <a class="button button-secondary" href="#how-it-works">How It Works</a>
+            <a class="button button-primary" href="#system">Explore the system</a>
+            <a class="button button-secondary" href="#learning">See current research</a>
           </div>
-          <div class="trust-row" aria-label="Saentinel principles">
-            <span>Human-governed</span><i></i>
-            <span>Explainable</span><i></i>
-            <span>Deterministic</span>
+          <ul class="trust-row" aria-label="Operating boundaries">
+            <li>Paper first</li>
+            <li>Long only</li>
+            <li>Flat by close</li>
+          </ul>
+        </div>
+
+        <div class="market-console" aria-label="Illustration of the Saentinel Trader decision loop">
+          <div class="console-top">
+            <span>09:40 ET</span>
+            <strong>DECISION CYCLE</strong>
+            <i>PAPER</i>
           </div>
-        </div>
-
-        <div class="signal-graphic" aria-label="Governed evidence passing through deterministic safeguards to produce an auditable decision">
-          <div class="signal-labels" aria-hidden="true">
-            <span>Governed evidence</span>
-            <span>Deterministic policy</span>
-            <span>Auditable decision</span>
+          <div class="console-chart" aria-hidden="true">
+            <svg viewBox="0 0 620 300">
+              <defs>
+                <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#0c8b88" stop-opacity=".28"></stop>
+                  <stop offset="1" stop-color="#0c8b88" stop-opacity="0"></stop>
+                </linearGradient>
+              </defs>
+              <g class="chart-grid"><path d="M20 50h580M20 110h580M20 170h580M20 230h580"></path><path d="M90 25v240M200 25v240M310 25v240M420 25v240M530 25v240"></path></g>
+              <path class="area" d="M20 228 62 214 104 220 146 185 188 194 230 155 272 166 314 128 356 145 398 104 440 116 482 78 524 92 566 54 600 64V270H20Z"></path>
+              <path class="signal" d="M20 228 62 214 104 220 146 185 188 194 230 155 272 166 314 128 356 145 398 104 440 116 482 78 524 92 566 54 600 64"></path>
+              <circle cx="398" cy="104" r="7"></circle><circle cx="566" cy="54" r="9"></circle>
+            </svg>
           </div>
-          <svg viewBox="0 0 760 470" role="img" aria-hidden="true">
-            <defs>
-              <linearGradient id="tealFade" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#0c8b88" stop-opacity="0"></stop>
-                <stop offset=".4" stop-color="#0c8b88" stop-opacity=".8"></stop>
-                <stop offset="1" stop-color="#0c8b88"></stop>
-              </linearGradient>
-              <linearGradient id="goldFade" x1="0" y1="0" x2="1" y2="0">
-                <stop offset="0" stop-color="#d6a32a"></stop>
-                <stop offset="1" stop-color="#d6a32a" stop-opacity=".65"></stop>
-              </linearGradient>
-              <radialGradient id="approvalGlow">
-                <stop offset="0" stop-color="#f5d77e" stop-opacity=".8"></stop>
-                <stop offset="1" stop-color="#f5d77e" stop-opacity="0"></stop>
-              </radialGradient>
-              <filter id="softGlow"><feGaussianBlur stdDeviation="10"></feGaussianBlur></filter>
-            </defs>
-            <circle cx="190" cy="234" r="145" fill="#dcefeb" opacity=".56"></circle>
-            <circle cx="654" cy="235" r="126" fill="#faefcd" opacity=".62"></circle>
-            <path class="grid-line" d="M105 418h565M150 390h480M200 362h390M250 334h300M285 305h230"></path>
-            <path class="grid-line" d="m105 418 180-113M210 418l105-113M320 418l25-113M430 418l-55-113M540 418 405 305M670 418 435 305"></path>
-            <g class="analysis-lines" fill="none" stroke="url(#tealFade)" stroke-width="2">
-              <path d="M40 122c130 0 107 72 235 72h40"></path>
-              <path d="M25 167c115 0 104 48 250 48h40"></path>
-              <path d="M50 212c96 0 98 20 225 20h40"></path>
-              <path d="M15 259c116 0 121-8 260-8h40"></path>
-              <path d="M45 306c105 0 107-37 230-37h40"></path>
-              <path d="M70 351c95 0 85-64 205-64h40"></path>
-            </g>
-            <g class="nodes" fill="#f7f4ec" stroke="#0c8b88" stroke-width="2">
-              <circle cx="93" cy="137" r="4"></circle><circle cx="146" cy="174" r="4"></circle>
-              <circle cx="106" cy="216" r="4"></circle><circle cx="178" cy="232" r="4"></circle>
-              <circle cx="91" cy="276" r="4"></circle><circle cx="155" cy="303" r="4"></circle>
-              <circle cx="212" cy="194" r="4"></circle><circle cx="230" cy="269" r="4"></circle>
-            </g>
-            <g class="guardrails" fill="#f7f4ec" fill-opacity=".9" stroke="#082642" stroke-width="2">
-              <path d="m314 102 48 27v207l-48-27z"></path>
-              <path d="m382 102 48 27v207l-48-27z"></path>
-              <path d="m450 102 48 27v207l-48-27z"></path>
-            </g>
-            <g class="guardrail-icons" fill="#082642">
-              <circle cx="338" cy="220" r="27"></circle>
-              <circle cx="406" cy="220" r="27"></circle>
-              <circle cx="474" cy="220" r="27"></circle>
-            </g>
-            <g class="mini-icons" fill="none" stroke="#f7f4ec" stroke-width="2">
-              <path d="m338 205 12 5v9c0 8-5 13-12 16-7-3-12-8-12-16v-9l12-5Z"></path>
-              <path d="M406 205v30M396 211h20M399 211l-7 13h14l-7-13ZM413 211l-7 13h14l-7-13Z"></path>
-              <path d="M464 207h20v27h-20zM468 214h12M468 220h12M468 226h8"></path>
-            </g>
-            <g class="approved-lines" fill="none" stroke="url(#goldFade)" stroke-width="2">
-              <path d="M498 173h77c24 0 23-34 48-34h57"></path>
-              <path d="M498 198h100c26 0 23-18 48-18h54"></path>
-              <path d="M498 223h151"></path>
-              <path d="M498 248h100c26 0 23 18 48 18h54"></path>
-              <path d="M498 273h77c24 0 23 34 48 34h57"></path>
-            </g>
-            <circle cx="574" cy="173" r="4" fill="#f7f4ec" stroke="#d6a32a" stroke-width="2"></circle>
-            <circle cx="604" cy="223" r="4" fill="#f7f4ec" stroke="#d6a32a" stroke-width="2"></circle>
-            <circle cx="574" cy="273" r="4" fill="#f7f4ec" stroke="#d6a32a" stroke-width="2"></circle>
-            <circle cx="683" cy="223" r="70" fill="url(#approvalGlow)" filter="url(#softGlow)"></circle>
-            <circle class="approval-circle" cx="683" cy="223" r="37" fill="#d6a32a"></circle>
-            <path d="m666 223 11 11 24-26" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </div>
-      </section>
-
-      <section class="section section-release" id="version-one">
-        <div class="release-intro">
-          <p class="kicker">Stable software boundary · July 2026</p>
-          <h2>Version 1.0 is the governed foundation.</h2>
-          <p>Saentinel Version 1.0 brings evidence, reasoning, recommendations, authority and bounded paper execution into one reconstructable chain. It is a stable software release—not a production deployment or a live-trading claim.</p>
-        </div>
-        <div class="release-proof" aria-label="Version 1.0 foundations">
-          <article><span>Research</span><strong>Evidence with lineage</strong><p>Bounded research sessions turn supplied analysis into validated findings and immutable investment cases.</p></article>
-          <article><span>Authority</span><strong>You remain in control</strong><p>Recommendations cannot create permission. Explicit authority and deterministic policy remain separate.</p></article>
-          <article><span>Verification</span><strong>Replayable by design</strong><p>Canonical identities, immutable records and deterministic replay make decisions independently reconstructable.</p></article>
-        </div>
-      </section>
-
-      <section class="section live-research-section" id="development" aria-labelledby="live-research-title">
-        <div class="live-research-intro">
-          <p class="kicker">Development milestone · July 2026</p>
-          <h2 id="live-research-title">Controlled live AI research—validated.</h2>
-          <p>Saentinel has successfully completed its first owner-authorized research invocation using a live AI provider. The workflow remained explicitly initiated, advisory-only and governed by deterministic safeguards.</p>
-        </div>
-        <div class="live-research-boundaries" aria-label="Controlled live research boundaries">
-          <article><span>01</span><div><h3>Explicit invocation</h3><p>Research begins only through a deliberate operator command.</p></div></article>
-          <article><span>02</span><div><h3>Human authority</h3><p>Recommendations inform the owner; they do not create permission.</p></div></article>
-          <article><span>03</span><div><h3>No trading path</h3><p>Research remains separate from broker submission and execution.</p></div></article>
-        </div>
-      </section>
-
-      <section class="section outcomes-section" id="outcomes">
-        <div class="section-heading">
-          <p class="kicker">What Saentinel helps you do</p>
-          <h2>Move from investment question to disciplined judgment.</h2>
-          <p>Saentinel turns scattered analysis into structured, challengeable and portfolio-aware decision support.</p>
-        </div>
-        <div class="outcome-grid">
-          <article><span>01</span><h3>Investigate an opportunity</h3><p>Organize evidence, risks, assumptions, unknowns and invalidation conditions around a potential investment.</p></article>
-          <article><span>02</span><h3>Build a living thesis</h3><p>Preserve every meaningful revision and understand why an investment case strengthened, weakened or changed.</p></article>
-          <article><span>03</span><h3>Challenge your thinking</h3><p>Seek opposing evidence, surface disagreement and prevent one model, indicator or opinion from dominating the decision.</p></article>
-          <article><span>04</span><h3>Compare perspectives</h3><p>Bring together independent analytical disciplines while keeping consensus, dissent and uncertainty visible.</p></article>
-          <article><span>05</span><h3>Evaluate portfolio fit</h3><p>Consider cash, concentration, existing exposure and owner-defined constraints before treating an idea as actionable.</p></article>
-          <article><span>06</span><h3>Simulate before committing</h3><p>Use historical backtesting and governed paper execution to evaluate behavior without submitting a real broker order.</p></article>
-          <article><span>07</span><h3>Learn from outcomes</h3><p>Connect later results to the evidence and reasoning available at decision time without rewriting the past.</p></article>
-        </div>
-      </section>
-
-      <section class="section section-capabilities" id="capabilities">
-        <div class="section-heading">
-          <p class="kicker">Version 1.0 capabilities</p>
-          <h2>Intelligence with constitutional guardrails.</h2>
-          <p>Every stage preserves the distinction between analysis, recommendation, authority, execution and historical truth.</p>
-        </div>
-        <div class="capability-grid">
-          <article class="capability-card">
-            <span class="card-number">01</span>
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM7 9h10M7 13h7M7 17h5"></path></svg></div>
-            <h3>Governed research</h3>
-            <p>Bounded, provider-neutral analysts work through explicit protocols while evidence and provenance remain visible.</p>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">02</span>
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 5h14v10H9l-4 4V5ZM9 9h6M9 12h4"></path></svg></div>
-            <h3>Transparent deliberation</h3>
-            <p>Investment cases preserve supporting evidence, opposing views, uncertainty, consensus, dissent and responsible abstention.</p>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">03</span>
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2.4 20 5.8v5.8c0 5.1-3.2 8.7-8 10-4.8-1.3-8-4.9-8-10V5.8L12 2.4Z"></path><path d="m8.2 12 2.4 2.4 5.2-5.2"></path></svg></div>
-            <h3>Human authority</h3>
-            <p>The owner defines the mandate. Saentinel may advise, but it cannot expand its authority or weaken safeguards.</p>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">04</span>
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3v18M6 6h12M8 6 4 13h8L8 6Zm8 0-4 7h8l-4-7ZM4 13c.5 2 2 3 4 3s3.5-1 4-3M12 13c.5 2 2 3 4 3s3.5-1 4-3M8 21h8"></path></svg></div>
-            <h3>Deterministic safeguards</h3>
-            <p>Policy, constraints and risk checks remain independent of AI output and fail closed when inputs are invalid or inconsistent.</p>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">05</span>
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 18h16M6 15l3-4 3 2 5-7 2 2M17 6h2v2"></path></svg></div>
-            <h3>Bounded paper execution</h3>
-            <p>Authorized intents can enter a simulated, in-process execution sequence with exact accounting and no real broker submission.</p>
-          </article>
-          <article class="capability-card">
-            <span class="card-number">06</span>
-            <div class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.7L4 8.6M4 4v4.6h4.6"></path><path d="M12 8v4l3 2"></path></svg></div>
-            <h3>Auditable replay</h3>
-            <p>Immutable records, exact lineage and deterministic reconstruction preserve what happened without rewriting history.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section difference-section" id="difference">
-        <div class="difference-heading">
-          <p class="kicker">Why Saentinel is different</p>
-          <h2>Not another black-box opinion.</h2>
-          <p>Saentinel is designed to improve the quality of judgment, not simply produce a faster answer.</p>
-        </div>
-        <div class="comparison-table" role="table" aria-label="Typical AI investing tools compared with Saentinel">
-          <div class="comparison-row comparison-header" role="row">
-            <span role="columnheader">Typical AI investing tool</span>
-            <span role="columnheader">Saentinel</span>
+          <div class="console-flow">
+            <div><span>01</span><strong>Rank</strong><small>Deterministic</small></div>
+            <b></b>
+            <div><span>02</span><strong>Advise</strong><small>One AI call</small></div>
+            <b></b>
+            <div><span>03</span><strong>Control</strong><small>Rules decide</small></div>
           </div>
-          <div class="comparison-row" role="row"><span role="cell">Produces an answer</span><strong role="cell">Preserves evidence and reasoning</strong></div>
-          <div class="comparison-row" role="row"><span role="cell">Hides disagreement</span><strong role="cell">Records consensus, dissent and uncertainty</strong></div>
-          <div class="comparison-row" role="row"><span role="cell">Treats confidence as authority</span><strong role="cell">Keeps recommendation and authority separate</strong></div>
-          <div class="comparison-row" role="row"><span role="cell">Optimizes for action</span><strong role="cell">Recognizes restraint as a valid decision</strong></div>
-          <div class="comparison-row" role="row"><span role="cell">Forgets prior reasoning</span><strong role="cell">Maintains immutable decision history</strong></div>
-          <div class="comparison-row" role="row"><span role="cell">Places the model at the center</span><strong role="cell">Keeps the owner sovereign</strong></div>
+          <div class="console-result"><span>OUTCOME</span><strong>No recommendation can bypass risk controls.</strong></div>
         </div>
       </section>
 
-      <section class="section process-section" id="how-it-works">
-        <div class="section-heading compact">
-          <p class="kicker">How it works</p>
-          <h2>From evidence to accountable action.</h2>
-        </div>
-        <ol class="process-list">
-          <li><span>01</span><div><h3>Gather evidence</h3><p>Research begins from bounded questions, explicit protocols and traceable source material.</p></div></li>
-          <li><span>02</span><div><h3>Analyze</h3><p>Replaceable analysts produce structured findings while facts, assumptions, forecasts and unknowns remain distinct.</p></div></li>
-          <li><span>03</span><div><h3>Deliberate</h3><p>Investment cases and committee reasoning preserve agreement, disagreement, uncertainty and abstention.</p></div></li>
-          <li><span>04</span><div><h3>Recommend</h3><p>Contextual recommendations explain evidence, risks, confidence and invalidation conditions.</p></div></li>
-          <li><span>05</span><div><h3>Govern</h3><p>Owner-delegated authority and deterministic policy decide whether a proposed action may proceed.</p></div></li>
-          <li><span>06</span><div><h3>Record and learn</h3><p>Paper outcomes, decision records and descriptive learning preserve history for future human review.</p></div></li>
-        </ol>
-      </section>
-
-      <section class="section scenario-section" aria-labelledby="scenario-title">
-        <div class="scenario-label">
-          <span>One investment question</span>
-          <i aria-hidden="true"></i>
-          <span>One accountable record</span>
-        </div>
-        <div class="scenario-copy">
-          <p class="kicker">A practical example</p>
-          <h2 id="scenario-title">Suppose you are considering an investment in a company.</h2>
-          <p>Saentinel can build the supporting case, identify contradictory evidence, document material risks, define what would invalidate the thesis, compare independent perspectives, evaluate the opportunity against portfolio constraints and preserve the complete decision record for future review.</p>
-        </div>
-        <ol class="scenario-path" aria-label="Example Saentinel research path">
-          <li><span>01</span>Frame the question</li>
-          <li><span>02</span>Gather and challenge evidence</li>
-          <li><span>03</span>Evaluate portfolio context</li>
-          <li><span>04</span>Recommend, abstain or reject</li>
-          <li><span>05</span>Preserve the reasoning</li>
-        </ol>
-      </section>
-
-      <section class="section principles-section" id="principles">
-        <div class="section-heading">
-          <p class="kicker">What governs Saentinel</p>
-          <h2>Built around enduring principles.</h2>
-          <p>Version 1.0 places disciplined stewardship and human sovereignty above technological convenience.</p>
-        </div>
-        <div class="principle-grid">
-          <article><span>01</span><h3>Integrity</h3><p>Pursue truth over convenience and preserve accountability in every record.</p></article>
-          <article><span>02</span><h3>Prudence</h3><p>Place capital preservation and sustainable, risk-aware growth before speculation.</p></article>
-          <article><span>03</span><h3>Transparency</h3><p>Explain reasoning, disclose uncertainty and keep conflicting evidence visible.</p></article>
-          <article><span>04</span><h3>Education</h3><p>Help the owner become a more informed, confident and independent investor.</p></article>
-        </div>
-        <article class="proportional-principle">
-          <span>05</span>
-          <div>
-            <p class="principle-label">Research economics</p>
-            <h3>Proportional intelligence</h3>
-          </div>
-          <p>Saentinel is governed to optimize net investment value after research costs. Deterministic work and governed reuse come first; external cloud models are reserved for materially important, complex cases under explicit owner control or ratified policy.</p>
-        </article>
-      </section>
-
-      <section class="section roadmap-section" id="roadmap">
-        <div class="roadmap-copy">
-          <p class="kicker">Roadmap</p>
-          <h2>A stable governed foundation.<br>Built carefully for what comes next.</h2>
-          <p>Version 1.0 establishes the reviewed software boundary. Future capability remains subject to the same owner authority, deterministic safeguards and evidence standards.</p>
-        </div>
-        <div class="roadmap-steps">
-          <article class="current"><span>Released</span><h3>Version 1.0 foundation</h3><p>Governed research, committee reasoning, decision records, deterministic paper execution and replay verification.</p></article>
-          <article><span>Validated</span><h3>Controlled AI research</h3><p>A practical operator workflow has successfully connected a live AI provider to Saentinel’s governed recommendation pipeline.</p></article>
-          <article class="in-development"><span>In development</span><h3>Governed analyst selection</h3><p>Saentinel selects only explicitly configured, eligible analysts and binds the exact provider, model and research boundary before contact. When policy cannot authorize a suitable analyst, it requests owner action or abstains rather than improvising.</p></article>
-          <article><span>Future</span><h3>Controlled connectivity</h3><p>Production and brokerage capabilities only after separate authorization, infrastructure validation and explicit safety review.</p></article>
-        </div>
-      </section>
-
-      <section class="section limits-section" aria-labelledby="limits-title">
+      <section class="statement section" id="system">
+        <p class="kicker">A clean restart</p>
         <div>
-          <p class="kicker">Version 1.0 boundary</p>
-          <h2 id="limits-title">Stable does not mean autonomous.</h2>
+          <h2>Built to trade less—and know more.</h2>
+          <p>Saentinel Trader replaces an overbuilt investment-research platform with a deliberately small operating loop. It scans liquid US equities, records the evidence behind every cycle, asks one model for bounded buy-or-abstain advice, and keeps position sizing, risk, execution, monitoring and exits outside the model.</p>
         </div>
-        <p>Saentinel Version 1.0 does not provide live trading, real broker submission, production activation or evidence of profitability. Its governed execution path is bounded, simulated and intentionally separate from any autonomous trading loop.</p>
       </section>
 
-      <footer>
-        <a class="footer-brand" href="#top"><img src="assets/saentinel-logo-v2.svg" alt="Saentinel"></a>
-        <p>Knowledge earns confidence. Discipline earns trust.</p>
-        <p class="copyright">© 2026 Saentinel</p>
-      </footer>
+      <section class="section operating-model" aria-labelledby="model-title">
+        <div class="section-heading">
+          <p class="kicker">The operating model</p>
+          <h2 id="model-title">Intelligence where judgment helps.<br>Code where rules must hold.</h2>
+        </div>
+        <div class="model-grid">
+          <article>
+            <span>MARKET DATA</span>
+            <h3>Observe broadly</h3>
+            <p>Alpaca assets, snapshots, daily history and completed intraday bars create a time-bounded view of tradable US stocks and ETFs.</p>
+          </article>
+          <article>
+            <span>DETERMINISTIC SCANNER</span>
+            <h3>Reduce the universe</h3>
+            <p>Liquidity, momentum, spread, history and intraday context rank candidates before AI sees anything. Missing or invalid inputs are excluded, never invented.</p>
+          </article>
+          <article class="accent-card">
+            <span>BOUNDED AI</span>
+            <h3>Recommend—or abstain</h3>
+            <p>At most one configured model call evaluates a bounded shortlist. Strict JSON validation applies. Zero recommendations means zero buys; there is no fallback or automatic retry.</p>
+          </article>
+          <article>
+            <span>DETERMINISTIC EXECUTION</span>
+            <h3>Control every action</h3>
+            <p>Fresh quotes, position capacity, allocation ceilings, risk budgets, daily-loss state and ownership checks independently constrain every paper order.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section loop-section" id="loop">
+        <div class="loop-copy">
+          <p class="kicker">One bounded cycle</p>
+          <h2>From market scan to a recorded outcome.</h2>
+          <p>Each cycle is claimed once and persisted. Restarts cannot repeat the AI request, stale results cannot enter, and execution rechecks the world before acting.</p>
+        </div>
+        <ol class="loop-list">
+          <li><span>01</span><div><h3>Scan</h3><p>Filter and rank eligible US stocks and ETFs from current market observations.</p></div></li>
+          <li><span>02</span><div><h3>Enrich</h3><p>Add completed daily and intraday context, with explicit rejection of stale or incomplete evidence.</p></div></li>
+          <li><span>03</span><div><h3>Advise</h3><p>Send a bounded shortlist to one OpenAI-compatible model and accept only a complete, validated response.</p></div></li>
+          <li><span>04</span><div><h3>Constrain</h3><p>Apply deterministic capacity, capital, risk, spread, timing and asset-eligibility rules.</p></div></li>
+          <li><span>05</span><div><h3>Monitor and exit</h3><p>Manage owned positions through stop, take-profit, thesis, optional stagnation, daily-risk and end-of-day rules.</p></div></li>
+          <li><span>06</span><div><h3>Journal</h3><p>Persist scans, advice, token use, orders, fills, ownership and decision provenance in SQLite.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="section safeguards" aria-labelledby="safeguards-title">
+        <div class="section-heading split">
+          <p class="kicker">Risk before activity</p>
+          <h2 id="safeguards-title">The model proposes.<br>The system disposes.</h2>
+          <p>AI is never the authority for capital, order safety or exits. Those decisions remain explicit, testable and restart-safe.</p>
+        </div>
+        <div class="safeguard-grid">
+          <article><span>01</span><h3>Allocation is a ceiling</h3><p>An AI-suggested allocation can be reduced by deterministic controls. It can never enlarge itself into more exposure.</p></article>
+          <article><span>02</span><h3>Risk reacts without chasing</h3><p>Recovery mode reduces size and demands higher confidence. A hard daily-loss stop blocks new entries and flattens owned exposure.</p></article>
+          <article><span>03</span><h3>Ownership stays exact</h3><p>Saentinel monitors and exits only quantities it can prove it owns. Manual positions remain outside its authority.</p></article>
+          <article><span>04</span><h3>No overnight positions</h3><p>New entries stop before the close. Entry orders are canceled and owned positions are flattened within a bounded liquidation window.</p></article>
+        </div>
+      </section>
+
+      <section class="section learning-section" id="learning">
+        <div class="learning-intro">
+          <p class="kicker">Current paper research</p>
+          <h2>The system works.<br>The strategy must still earn trust.</h2>
+          <p>Forward paper runs exposed an important reality: safe software is not the same thing as a successful strategy. Saentinel is now using its own evidence to study where losses occur and improve only through explicit, deterministic changes.</p>
+        </div>
+        <div class="research-board">
+          <article class="done"><span>OBSERVING</span><h3>Earlier market context</h3><p>Opening and one-minute telemetry record what candidates and SPY were doing before normal intraday history became available.</p></article>
+          <article class="done"><span>VALIDATING</span><h3>One 09:40 opening decision</h3><p>A single bounded exception evaluates the persisted 09:35 candidate pool—without adding a second call, backfilling missing data or weakening normal controls.</p></article>
+          <article class="active"><span>IN DEVELOPMENT</span><h3>Actionable market regime</h3><p>SPY conditions are being converted from observational labels into deterministic entry-risk controls for unfavorable tape.</p></article>
+          <article class="active"><span>IN DEVELOPMENT</span><h3>Protect gains from reversal</h3><p>A restart-safe rule is being designed to prevent positions that became meaningful winners from later turning into full losses.</p></article>
+        </div>
+      </section>
+
+      <section class="section evidence-section">
+        <div>
+          <p class="kicker">What failure changed</p>
+          <h2>No victory lap.<br>No hidden rewrite.</h2>
+        </div>
+        <blockquote>
+          <p>“A system can execute correctly and still fail its investment objective.”</p>
+          <footer>That is now part of Saentinel’s design discipline.</footer>
+        </blockquote>
+        <p class="evidence-copy">The original Saentinel became too complex to prove useful. The replacement deliberately narrows the problem, preserves real paper evidence, and treats disappointing outcomes as inputs—not as results to explain away. New controls are developed from observed failure modes, while profitability remains unproven.</p>
+      </section>
+
+      <section class="section boundaries" id="boundaries">
+        <div class="boundaries-copy">
+          <p class="kicker">The honest boundary</p>
+          <h2>A research system.<br>Not a promise.</h2>
+        </div>
+        <ul>
+          <li><strong>Paper trading only today.</strong><span>Live operation exists in code but has not been accepted or run.</span></li>
+          <li><strong>No profitability claim.</strong><span>Implementation quality and paper fills do not establish a durable edge.</span></li>
+          <li><strong>No autonomous authority.</strong><span>The model cannot change limits, widen risk, add providers or invent missing evidence.</span></li>
+          <li><strong>No shorting or crypto.</strong><span>The operating scope is long-only US stocks and ETFs.</span></li>
+          <li><strong>No guaranteed liquidation.</strong><span>Halts, outages, gaps and broker behavior can prevent or worsen exits.</span></li>
+        </ul>
+      </section>
+
+      <section class="contact-section">
+        <p class="kicker">Follow the experiment</p>
+        <h2>Built in the open spirit of evidence.</h2>
+        <p>Saentinel Trader is private software under active paper evaluation. Questions about the project are welcome.</p>
+        <a class="button button-primary" href="mailto:contact@saentinel.com">contact@saentinel.com</a>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#top" aria-label="Back to top"><img src="assets/saentinel-logo-v2.svg" alt="Saentinel"></a>
+      <p>Intraday trading research with bounded AI and deterministic control.</p>
+      <p class="copyright">© 2026 Saentinel</p>
+    </footer>
   </body>
 </html>
