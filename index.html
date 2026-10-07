@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Saentinel Trader is a bounded, paper-first intraday trading research system combining deterministic market analysis, one constrained AI decision, and rule-based risk and execution controls.">
+    <meta name="description" content="Saentinel Trader is a paper-first intraday trading research system combining deterministic market analysis, deterministic entry selection, rule-based risk and execution controls, and optional shadow AI for independent comparison.">
     <meta name="theme-color" content="#f7f4ec">
-    <title>Saentinel Trader | Bounded AI. Deterministic Risk.</title>
+    <title>Saentinel Trader | Deterministic Trading. Measured Intelligence.</title>
     <link rel="icon" href="assets/saentinel-icon-v2.svg">
     <link rel="stylesheet" href="styles.css?v=2.0.0">
   </head>
@@ -26,8 +26,8 @@
       <section class="hero" id="top">
         <div class="hero-copy">
           <p class="eyebrow">Saentinel Trader · Active paper evaluation</p>
-          <h1>Bounded AI.<br><em>Deterministic risk.</em></h1>
-          <p class="hero-intro">A focused intraday trading research system for US stocks and ETFs. Market data finds the candidates. One constrained AI decision evaluates them. Deterministic controls decide what may actually happen.</p>
+          <h1>Deterministic trading.<br><em>Measured intelligence.</em></h1>
+          <p class="hero-intro">A focused intraday trading research system for US stocks and ETFs. Market data ranks the candidates. Transparent deterministic rules select entries. Risk and execution remain deterministic. An optional shadow AI observes the same evidence only for comparison and research.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="#system">Explore the system</a>
             <a class="button button-secondary" href="#learning">See current research</a>
@@ -62,11 +62,11 @@
           <div class="console-flow">
             <div><span>01</span><strong>Rank</strong><small>Deterministic</small></div>
             <b></b>
-            <div><span>02</span><strong>Advise</strong><small>One AI call</small></div>
+            <div><span>02</span><strong>Select</strong><small>Deterministic</small></div>
             <b></b>
             <div><span>03</span><strong>Control</strong><small>Rules decide</small></div>
           </div>
-          <div class="console-result"><span>OUTCOME</span><strong>No recommendation can bypass risk controls.</strong></div>
+          <div class="console-result"><span>OUTCOME</span><strong>Trading decisions are deterministic. Shadow AI can compare—but never control.</strong></div>
         </div>
       </section>
 
@@ -74,7 +74,7 @@
         <p class="kicker">A clean restart</p>
         <div>
           <h2>Built to trade less—and know more.</h2>
-          <p>Saentinel Trader replaces an overbuilt investment-research platform with a deliberately small operating loop. It scans liquid US equities, records the evidence behind every cycle, asks one model for bounded buy-or-abstain advice, and keeps position sizing, risk, execution, monitoring and exits outside the model.</p>
+          <p>Saentinel Trader replaces an overbuilt investment-research platform with a deliberately small operating loop. It scans liquid US equities, records the evidence behind every cycle, selects entries with transparent deterministic rules, and keeps position sizing, risk, execution, monitoring and exits deterministic. An optional shadow model evaluates the same evidence independently so its recommendations can be measured without influencing orders.</p>
         </div>
       </section>
 
@@ -92,17 +92,17 @@
           <article>
             <span>DETERMINISTIC SCANNER</span>
             <h3>Reduce the universe</h3>
-            <p>Liquidity, momentum, spread, history and intraday context rank candidates before AI sees anything. Missing or invalid inputs are excluded, never invented.</p>
+            <p>Liquidity, momentum, spread, history and intraday context rank candidates before selection. Missing or invalid inputs are excluded, never invented.</p>
           </article>
           <article class="accent-card">
-            <span>BOUNDED AI</span>
-            <h3>Recommend—or abstain</h3>
-            <p>At most one configured model call evaluates a bounded shortlist. Strict JSON validation applies. Zero recommendations means zero buys; there is no fallback or automatic retry.</p>
+            <span>DETERMINISTIC SELECTOR</span>
+            <h3>Select—or abstain</h3>
+            <p>Transparent gates reject entries that are below VWAP, too extended versus VWAP or ATR, too correlated, already occupied, or beyond the cycle cap. The same inputs produce the same decision.</p>
           </article>
           <article>
-            <span>DETERMINISTIC EXECUTION</span>
-            <h3>Control every action</h3>
-            <p>Fresh quotes, position capacity, allocation ceilings, risk budgets, daily-loss state and ownership checks independently constrain every paper order.</p>
+            <span>RISK, EXECUTION & SHADOW RESEARCH</span>
+            <h3>Control—and measure</h3>
+            <p>Fresh quotes, market regime, position capacity, allocation ceilings, risk budgets, daily-loss state and ownership checks constrain every paper order. Optional shadow AI runs separately and cannot place, size, block or exit trades.</p>
           </article>
         </div>
       </section>
@@ -111,27 +111,27 @@
         <div class="loop-copy">
           <p class="kicker">One bounded cycle</p>
           <h2>From market scan to a recorded outcome.</h2>
-          <p>Each cycle is claimed once and persisted. Restarts cannot repeat the AI request, stale results cannot enter, and execution rechecks the world before acting.</p>
+          <p>Each cycle is claimed once and persisted. Selection is deterministic, stale results cannot enter, and execution rechecks the world before acting. Optional shadow-AI work is recorded independently and never delays entries.</p>
         </div>
         <ol class="loop-list">
           <li><span>01</span><div><h3>Scan</h3><p>Filter and rank eligible US stocks and ETFs from current market observations.</p></div></li>
           <li><span>02</span><div><h3>Enrich</h3><p>Add completed daily and intraday context, with explicit rejection of stale or incomplete evidence.</p></div></li>
-          <li><span>03</span><div><h3>Advise</h3><p>Send a bounded shortlist to one OpenAI-compatible model and accept only a complete, validated response.</p></div></li>
-          <li><span>04</span><div><h3>Constrain</h3><p>Apply deterministic capacity, capital, risk, spread, timing and asset-eligibility rules.</p></div></li>
-          <li><span>05</span><div><h3>Monitor and exit</h3><p>Manage owned positions through stop, take-profit, thesis, optional stagnation, daily-risk and end-of-day rules.</p></div></li>
-          <li><span>06</span><div><h3>Journal</h3><p>Persist scans, advice, token use, orders, fills, ownership and decision provenance in SQLite.</p></div></li>
+          <li><span>03</span><div><h3>Select</h3><p>Apply deterministic VWAP, ATR-extension, correlation, occupancy and cycle-cap rules to the ranked shortlist.</p></div></li>
+          <li><span>04</span><div><h3>Constrain</h3><p>Apply deterministic market-regime, capacity, capital, risk, spread, timing and asset-eligibility rules, then revalidate against fresh quotes before submission.</p></div></li>
+          <li><span>05</span><div><h3>Monitor and exit</h3><p>Manage owned positions through stop, take-profit, thesis, stagnation, winner-to-loser profit protection, daily-risk and end-of-day rules.</p></div></li>
+          <li><span>06</span><div><h3>Journal and compare</h3><p>Persist scans, selections, orders, fills, ownership and research outcomes in SQLite. When enabled, shadow-AI recommendations are stored separately for head-to-head evaluation.</p></div></li>
         </ol>
       </section>
 
       <section class="section safeguards" aria-labelledby="safeguards-title">
         <div class="section-heading split">
           <p class="kicker">Risk before activity</p>
-          <h2 id="safeguards-title">The model proposes.<br>The system disposes.</h2>
-          <p>AI is never the authority for capital, order safety or exits. Those decisions remain explicit, testable and restart-safe.</p>
+          <h2 id="safeguards-title">The evidence informs.<br>The rules decide.</h2>
+          <p>The trading path is explicit, testable and restart-safe. Optional AI is observational: it can be compared with the deterministic selector, but it has no authority over capital, orders, risk or exits.</p>
         </div>
         <div class="safeguard-grid">
-          <article><span>01</span><h3>Allocation is a ceiling</h3><p>An AI-suggested allocation can be reduced by deterministic controls. It can never enlarge itself into more exposure.</p></article>
-          <article><span>02</span><h3>Risk reacts without chasing</h3><p>Recovery mode reduces size and demands higher confidence. A hard daily-loss stop blocks new entries and flattens owned exposure.</p></article>
+          <article><span>01</span><h3>Allocation is a ceiling</h3><p>The selector assigns a bounded allocation ceiling. Position, capital, risk-mode, buying-power and market-regime controls may reduce it further; none can silently enlarge exposure.</p></article>
+          <article><span>02</span><h3>Risk reacts without chasing</h3><p>Recovery mode reduces size, deterministic SPY regime policy can restrict or block new entries, and a hard daily-loss stop blocks new entries and flattens owned exposure.</p></article>
           <article><span>03</span><h3>Ownership stays exact</h3><p>Saentinel monitors and exits only quantities it can prove it owns. Manual positions remain outside its authority.</p></article>
           <article><span>04</span><h3>No overnight positions</h3><p>New entries stop before the close. Entry orders are canceled and owned positions are flattened within a bounded liquidation window.</p></article>
         </div>
@@ -144,10 +144,13 @@
           <p>Forward paper runs exposed an important reality: safe software is not the same thing as a successful strategy. Saentinel is now using its own evidence to study where losses occur and improve only through explicit, deterministic changes.</p>
         </div>
         <div class="research-board">
-          <article class="done"><span>OBSERVING</span><h3>Earlier market context</h3><p>Opening and one-minute telemetry record what candidates and SPY were doing before normal intraday history became available.</p></article>
-          <article class="done"><span>VALIDATING</span><h3>One 09:40 opening decision</h3><p>A single bounded exception evaluates the persisted 09:35 candidate pool—without adding a second call, backfilling missing data or weakening normal controls.</p></article>
-          <article class="active"><span>IN DEVELOPMENT</span><h3>Actionable market regime</h3><p>SPY conditions are being converted from observational labels into deterministic entry-risk controls for unfavorable tape.</p></article>
-          <article class="active"><span>IN DEVELOPMENT</span><h3>Protect gains from reversal</h3><p>A restart-safe rule is being designed to prevent positions that became meaningful winners from later turning into full losses.</p></article>
+          <article class="done"><span>DEPLOYED</span><h3>Deterministic entry selection</h3><p>Actual entries now come from a transparent selector over the ranked shortlist. VWAP, ATR extension, correlation, occupancy and cycle caps are explicit and replayable.</p></article>
+          <article class="done"><span>DEPLOYED</span><h3>SPY market-regime control</h3><p>Deterministic BULLISH, NEUTRAL, BEARISH and STRESSED states now influence new-entry eligibility and risk without changing existing-position exits.</p></article>
+          <article class="done"><span>DEPLOYED</span><h3>Winner-to-loser protection</h3><p>A restart-safe profit-protection rule can preserve a meaningful intraday winner from reverting into a full loss while leaving higher-priority exits intact.</p></article>
+          <article class="done"><span>DEPLOYED</span><h3>Execution and reconciliation safety</h3><p>Known Alpaca fill/position propagation races are bounded and audited so temporary broker lag does not contaminate unrelated symbols or ownership decisions.</p></article>
+          <article class="active"><span>MEASURING</span><h3>Shadow AI vs deterministic selection</h3><p>The optional model now recommends in shadow only. Its picks, confidence and allocation are persisted for independent comparison against deterministic selections and outcomes.</p></article>
+          <article class="active"><span>RESEARCH</span><h3>IEX vs SIP decision replay</h3><p>Read-only historical replay compares how feed choice could have changed saved scanner and shadow decisions while respecting point-in-time data boundaries.</p></article>
+          <article class="active"><span>MEASURING</span><h3>Does the strategy have an edge?</h3><p>Ranking power, selection value, trade economics, drawdown and forward paper performance are now measured explicitly. The answer is not assumed—and profitability remains unproven.</p></article>
         </div>
       </section>
 
@@ -160,7 +163,7 @@
           <p>“A system can execute correctly and still fail its investment objective.”</p>
           <footer>That is now part of Saentinel’s design discipline.</footer>
         </blockquote>
-        <p class="evidence-copy">The original Saentinel became too complex to prove useful. The replacement deliberately narrows the problem, preserves real paper evidence, and treats disappointing outcomes as inputs—not as results to explain away. New controls are developed from observed failure modes, while profitability remains unproven.</p>
+        <p class="evidence-copy">The original Saentinel became too complex to prove useful. The replacement deliberately narrows the problem, preserves real paper evidence, and treats disappointing outcomes as inputs—not as results to explain away. When forward evidence showed that LLM picks underperformed the candidates they rejected, the model was removed from the trading decision path instead of being defended. Profitability remains unproven.</p>
       </section>
 
       <section class="section boundaries" id="boundaries">
@@ -171,7 +174,7 @@
         <ul>
           <li><strong>Paper trading only today.</strong><span>Live operation exists in code but has not been accepted or run.</span></li>
           <li><strong>No profitability claim.</strong><span>Implementation quality and paper fills do not establish a durable edge.</span></li>
-          <li><strong>No autonomous authority.</strong><span>The model cannot change limits, widen risk, add providers or invent missing evidence.</span></li>
+          <li><strong>No AI trading authority.</strong><span>The optional shadow model cannot place, size, block or exit trades, change limits, widen risk or invent missing evidence.</span></li>
           <li><strong>No shorting or crypto.</strong><span>The operating scope is long-only US stocks and ETFs.</span></li>
           <li><strong>No guaranteed liquidation.</strong><span>Halts, outages, gaps and broker behavior can prevent or worsen exits.</span></li>
         </ul>
@@ -187,7 +190,7 @@
 
     <footer class="site-footer">
       <a class="footer-brand" href="#top" aria-label="Back to top"><img src="assets/saentinel-logo-v2.svg" alt="Saentinel"></a>
-      <p>Intraday trading research with bounded AI and deterministic control.</p>
+      <p>Intraday trading research with deterministic decisions and measured intelligence.</p>
       <p class="copyright">© 2026 Saentinel</p>
     </footer>
   </body>
