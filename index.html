@@ -117,7 +117,7 @@
           <li><span>01</span><div><h3>Scan</h3><p>Filter and rank eligible US stocks and ETFs from current market observations.</p></div></li>
           <li><span>02</span><div><h3>Enrich</h3><p>Add completed daily and intraday context, with explicit rejection of stale or incomplete evidence.</p></div></li>
           <li><span>03</span><div><h3>Select</h3><p>Apply deterministic VWAP, ATR-extension, correlation, occupancy and cycle-cap rules to the ranked shortlist.</p></div></li>
-          <li><span>04</span><div><h3>Constrain</h3><p>Apply deterministic market-regime, capacity, capital, risk, spread, timing and asset-eligibility rules, then revalidate against fresh quotes before submission.</p></div></li>
+          <li><span>04</span><div><h3>Constrain</h3><p>Apply deterministic market-regime, capacity, capital, risk, spread, timing and asset-eligibility rules. Revalidate before submission; optional paper pullback entries wait at a fixed limit within a bounded window.</p></div></li>
           <li><span>05</span><div><h3>Monitor and exit</h3><p>Manage owned positions through stop, take-profit, thesis, stagnation, winner-to-loser profit protection, daily-risk and end-of-day rules.</p></div></li>
           <li><span>06</span><div><h3>Journal and compare</h3><p>Persist scans, selections, orders, fills, ownership and research outcomes in SQLite. When enabled, shadow-AI recommendations are stored separately for head-to-head evaluation.</p></div></li>
         </ol>
@@ -140,17 +140,17 @@
       <section class="section learning-section" id="learning">
         <div class="learning-intro">
           <p class="kicker">Current paper research</p>
-          <h2>The system works.<br>The strategy must still earn trust.</h2>
-          <p>Forward paper runs exposed an important reality: safe software is not the same thing as a successful strategy. Saentinel is now using its own evidence to study where losses occur and improve only through explicit, deterministic changes.</p>
+          <h2>Every change must<br>earn its place.</h2>
+          <p>Forward paper evaluation now asks two practical questions: can waiting for a pullback improve entries, and does a tightly controlled second attempt after a winner help the whole account? Each change must be judged against fills, missed opportunities, drawdown and session outcomes. Profitability remains unproven.</p>
         </div>
         <div class="research-board">
-          <article class="done"><span>DEPLOYED</span><h3>Deterministic entry selection</h3><p>Actual entries now come from a transparent selector over the ranked shortlist. VWAP, ATR extension, correlation, occupancy and cycle caps are explicit and replayable.</p></article>
-          <article class="done"><span>DEPLOYED</span><h3>SPY market-regime control</h3><p>Deterministic BULLISH, NEUTRAL, BEARISH and STRESSED states now influence new-entry eligibility and risk without changing existing-position exits.</p></article>
-          <article class="done"><span>DEPLOYED</span><h3>Winner-to-loser protection</h3><p>A restart-safe profit-protection rule can preserve a meaningful intraday winner from reverting into a full loss while leaving higher-priority exits intact.</p></article>
-          <article class="done"><span>DEPLOYED</span><h3>Execution and reconciliation safety</h3><p>Known Alpaca fill/position propagation races are bounded and audited so temporary broker lag does not contaminate unrelated symbols or ownership decisions.</p></article>
-          <article class="active"><span>MEASURING</span><h3>Shadow AI vs deterministic selection</h3><p>The optional model now recommends in shadow only. Its picks, confidence and allocation are persisted for independent comparison against deterministic selections and outcomes.</p></article>
-          <article class="active"><span>RESEARCH</span><h3>IEX vs SIP decision replay</h3><p>Read-only historical replay compares how feed choice could have changed saved scanner and shadow decisions while respecting point-in-time data boundaries.</p></article>
-          <article class="active"><span>MEASURING</span><h3>Does the strategy have an edge?</h3><p>Ranking power, selection value, trade economics, drawdown and forward paper performance are now measured explicitly. The answer is not assumed—and profitability remains unproven.</p></article>
+          <article class="active"><span>FORWARD PAPER EVALUATION</span><h3>Wait for the pullback</h3><p>An optional normal-scan entry mode places a fixed limit below the decision price and waits within a bounded window. Orders are not chased or enlarged; unfilled capital and risk remain reserved until cancellation is confirmed. The separate 09:40 path stays immediate.</p></article>
+          <article class="done"><span>IMPLEMENTED · DEFAULT OFF</span><h3>One controlled return to a winner</h3><p>An optional paper-only rule permits one additional pullback attempt after a proven profitable trade, confirmed flatness and a cooldown. Fresh selection and all existing risk controls still apply. A failed or unfilled attempt cannot be recycled.</p></article>
+          <article class="active"><span>PLANNED · NOT ACTIVATED</span><h3>A matched paper comparison</h3><p>Two separate paper accounts will compare winner re-entry off versus on with otherwise matching code and settings. The planned evaluation covers at least ten matched full sessions and measures account returns, drawdown, fills and displaced opportunities—not just the second trade's result.</p></article>
+          <article class="done"><span>IMPLEMENTED · OPTIONAL</span><h3>Bound total planned risk</h3><p>An aggregate planned open-risk cap can limit new entries across owned positions and pending buys. This supplements per-trade and daily-loss controls; planned risk is not a guarantee of realized loss.</p></article>
+          <article class="done"><span>IMPLEMENTED · OPTIONAL</span><h3>Close, reconcile and preserve</h3><p>Paper sessions can finish with a checked daily journal archive after the official close, confirmed flatness and resolved orders. A submitted exit or cancellation never counts as proof that the account is flat.</p></article>
+          <article class="active"><span>MEASURING</span><h3>Shadow AI without trading authority</h3><p>Deterministic rules continue to select entries. Optional AI recommendations are recorded independently for comparison and cannot place, size, block or exit trades.</p></article>
+          <article class="active"><span>RESEARCH</span><h3>Evidence across the whole session</h3><p>Saved market observations, decisions, orders and fills support review of entry quality, feed differences and trade economics. Missing observations remain unknown; favorable selected trades alone do not establish an edge.</p></article>
         </div>
       </section>
 
